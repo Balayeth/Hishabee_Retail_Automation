@@ -24,7 +24,9 @@ public class Supplier {
 
         driver.findElement(By.xpath("//button[contains(text(),'Select Shop')]")).click();
         Thread.sleep(3000);
+        driver.findElement(By.xpath("//i[@class='ri-menu-line wrapper-menu']")).click();
+        driver.findElement(By.xpath("//a[@href='/customer']")).click();
+        Thread.sleep(3000);
         driver.close();
-
     }
 }
